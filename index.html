@@ -1,1 +1,26 @@
-anhkiet.com
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page</title>
+</head>
+<body>
+  <div id="iframe-container"></div>
+  
+  <script>
+    // Function to create and configure the iframe
+    function createIframe() {
+      const iframe = document.createElement("iframe");
+      iframe.src = "https://www.example.com"; // Replace with your desired URL
+      iframe.width = "600";
+      iframe.height = "400";
+      iframe.scrolling = "yes";
+      
+      const container = document.getElementById("iframe-container");
+      container.appendChild(iframe);
+    }
+    
+    // Call the function to create the iframe
+    createIframe();
+  </script>
+</body>
+</html>
